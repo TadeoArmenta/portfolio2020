@@ -2,13 +2,13 @@ import Mock from "../mock";
 
 const database = {
   information: {
-    name: 'Patrick Finnigan',
-    aboutContent: "I am a Jr Web Developer. I graduated from UC Berkeley Extension program with a certification in Fullstack MERN development, and I am looking for the next opportunity to develop my skills further.",
-    age: 25,
+    name: 'Carlos Gustavo Tadeo Armenta Andrade',
+    aboutContent: "DevOps with more than 18 years of server admin experience, more than 12 years of professional Nodejs,ExpressJs,MongoDB development, along with vast experience coordinating development teams and deployment. Profuse knowledge on Python/Bash/JavaScript Hard Worker, commited, auto disciplined and goal oriented.",
+    age: 40,
     phone: '',
-    nationality: 'American',
-    language: 'English',
-    email: 'patrickfinnigan94@gmail.com',
+    nationality: 'Spanish/Mexican',
+    language: 'Spanish/English',
+    email: 'cgtarmenta@gmail.com',
     address: '',
     freelanceStatus: 'Available',
     socialLinks: {
@@ -16,14 +16,17 @@ const database = {
       twitter: '',
       pinterest: '',
       behance: '',
-      linkedin: 'https://www.linkedin.com/in/patrickjfinnigan/',
+      linkedin: 'https://www.linkedin.com/in/tadeoarmenta/',
       dribbble: '',
-      github: 'https://github.com/patrickfinnigan',
-      stackoverflow: 'https://stackoverflow.com/users/9613775/patrick-finnigan'
+      github: 'https://github.com/TadeoArmenta',
+      stackoverflow: 'https://stackoverflow.com/users/2573450/tadeoarmenta?tab=profile',
+      telegram: 'https://t.me/dat30',
+      upwork: 'https://www.upwork.com/freelancers/~0130e45a6e324fd76a?viewMode=1',
+      freelancer: 'https://www.freelancer.es/hireme/dat30'
     },
-    brandImage: '/images/brand-image.jpg',
-    aboutImage: '/images/about-image.jpg',
-    aboutImageLg: '/images/about-image-lg.jpg',
+    brandImage: '/images/profile_2021.jpg',
+    aboutImage: '/images/about_2021.jpg',
+    aboutImageLg: '/images/about_2021.jpg',
     cvfile: '/files/Resume(1.17.2020).pdf'
   },
   services: [
@@ -275,9 +278,9 @@ const database = {
     }
   ],
   contactInfo: {
-    phoneNumbers: ['(707) 386-6233'],
-    emailAddress: ['patrickfinnigan94@gmail.com'],
-    address: "Olympia, Washington"
+    phoneNumbers: ['+52 (920) 02-7744'],
+    emailAddress: ['cgtarmenta@gmail.com'],
+    address: "Ávila del rey, reino de España"
   }
 }
 

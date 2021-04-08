@@ -129,3 +129,31 @@
 .size-xs[class^="lni-"] {
    font-size: inherit !important;
 }
+.icon-upwork {
+   display:inline-block;
+   height: 25px; 
+   padding: 2px 18px 7px 3px;
+   text-align: center;
+   min-width: 16px;
+   fill: white;
+}
+.icon-upwork:hover {
+   display:inline-block;
+   height: 25px; 
+   padding: 2px 18px 7px 3px;
+   text-align: center;
+   min-width: 16px;
+   fill: #04b790;
+}
+.icon-freelancer {
+   display:inline-block;
+   height: 20px;
+   padding: 1px 1px 1px 1px;
+   color: white;
+}
+.icon-freelancer:hover {
+   display:inline-block;
+   height: 20px;
+   padding: 1px 1px 1px 1px;
+   fill: #04b790;
+}

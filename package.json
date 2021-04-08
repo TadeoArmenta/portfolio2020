@@ -1,7 +1,8 @@
 {
-  "name": "portfolio2020",
+  "name": "portfolio2021",
   "version": "1.0.0",
   "dependencies": {
+    "@svgr/webpack": "^5.5.0",
     "axios": "^0.19.0",
     "axios-mock-adapter": "^1.17.0",
     "bootstrap": "^4.3.1",
@@ -39,7 +40,7 @@
       "last 5 safari version"
     ]
   },
-  "description": "Portfolio for 2020, uses Chester template © 2020 NuclearThemes",
+  "description": "Portfolio for 2021, uses Chester template © 2020 NuclearThemes",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -54,7 +55,7 @@
     "url": "https://github.com/patrickfinnigan/portfolio2020/issues"
   },
   "engines": {
-    "node": "10.15.3",
+    "node": ">=10.15.3",
     "npm": "6.14.5"
   },
   "homepage": "./",
