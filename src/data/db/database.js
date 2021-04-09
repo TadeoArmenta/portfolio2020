@@ -5,11 +5,11 @@ const database = {
     name: 'Carlos Gustavo Tadeo Armenta Andrade',
     aboutContent: "DevOps with more than 18 years of server admin experience, more than 12 years of professional Nodejs,ExpressJs,MongoDB development, along with vast experience coordinating development teams and deployment. Profuse knowledge on Python/Bash/JavaScript Hard Worker, commited, auto disciplined and goal oriented.",
     age: 40,
-    phone: '',
-    nationality: 'Spanish/Mexican',
-    language: 'Spanish/English',
+    phone: '+34 (920) 02-7744',
+    nationality: 'Spanish / Mexican',
+    language: 'Spanish / English',
     email: 'cgtarmenta@gmail.com',
-    address: '',
+    address: 'Ávila del Rey, reino de España',
     freelanceStatus: 'Available',
     socialLinks: {
       facebook: '',
@@ -278,7 +278,7 @@ const database = {
     }
   ],
   contactInfo: {
-    phoneNumbers: ['+52 (920) 02-7744'],
+    phoneNumbers: ['+34 (920) 02-7744'],
     emailAddress: ['cgtarmenta@gmail.com'],
     address: "Ávila del rey, reino de España"
   }

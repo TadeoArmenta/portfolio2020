@@ -1,6 +1,6 @@
 {
   "name": "portfolio2021",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
     "axios": "^0.19.0",
@@ -10,6 +10,7 @@
     "fslightbox-react": "^1.4.0",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
+    "react-cookie-consent": "^6.2.3",
     "react-dom": "^16.9.0",
     "react-feather": "^2.0.3",
     "react-lineicons": "^1.0.0",
@@ -44,7 +45,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patrickfinnigan/portfolio2020.git"
+    "url": "git+https://github.com/TadeoArmenta/portfolio2020.git"
   },
   "keywords": [
     "portfolio"

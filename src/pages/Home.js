@@ -3,6 +3,7 @@ import axios from 'axios';
 import Particles from "react-particles-js";
 import Socialicons from "../components/Socialicons";
 import Layout from "../components/Layout";
+import CookieConsent from "react-cookie-consent";
 
 function Home(){
   const [information, setInformation] = useState("");
@@ -58,6 +59,13 @@ function Home(){
                 </h1>
                 <p>{information.aboutContent}</p>
                 <Socialicons bordered />
+                <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} overlay
+                  style={{
+                    background: "#10121b",
+                    textShadow: "1px 0px white",
+                  }}>
+                  This website uses cookies to enhance the user experience.
+                </CookieConsent>
               </div>
             </div>
           </div>
