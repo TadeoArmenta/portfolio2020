@@ -24,7 +24,7 @@ const database = {
       upwork: 'https://www.upwork.com/freelancers/~0130e45a6e324fd76a?viewMode=1',
       freelancer: 'https://www.freelancer.es/hireme/dat30'
     },
-    brandImage: '/images/profile_2021.jpg',
+    brandImage: '/images/profile_2021_zoomed.jpg',
     aboutImage: '/images/about_2021.jpg',
     aboutImageLg: '/images/about_2021.jpg',
     cvfile: '/files/Resume.pdf'
@@ -52,14 +52,14 @@ const database = {
     }
   ],
   reviews: [
-    {
-      id: 1,
-      content: "Patrick was focused on success throughout the course, coming early to each class and dedicating time and energy into the homework and group projects.  Clearly, he loves to code and will tenaciously attack any challenge.",
-      author: {
-        name: 'Mark Carlson',
-        designation: 'Lead Developer, Takeoff Technologies'
-      },
-    }
+    // {
+    //   id: 1,
+    //   content: "Patrick was focused on success throughout the course, coming early to each class and dedicating time and energy into the homework and group projects.  Clearly, he loves to code and will tenaciously attack any challenge.",
+    //   author: {
+    //     name: 'Mark Carlson',
+    //     designation: 'Lead Developer, Takeoff Technologies'
+    //   },
+    // }
     // {
     //   id: 2,
     //   content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
@@ -109,7 +109,6 @@ const database = {
       title: "AndroidTv IPTV streaming apps",
       subtitle: "Android Native apps writed in Kotlin",
       imageUrl: "/images/xcustom_login.png",
-      // largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: 'https://www.upwork.com/freelancers/~0130e45a6e324fd76a?p=1378144225357602816'
     },
     // {
