@@ -4,6 +4,7 @@ import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import * as emailjs from 'emailjs-com'
+import { ReactComponent as Telegram } from '../assets/images/telegram.svg'
 
 function Contact(){
   const [phoneNumbers, setPhoneNumbers] = useState([]);
@@ -164,6 +165,17 @@ function Contact(){
                       {phoneNumbers.map(phoneNumber =>(
                         <p key={phoneNumber}><a href={numberFormatter(phoneNumber)}>{phoneNumber}</a></p>
                       ))}
+                    </div>
+                  </div>
+                )}
+                {!phoneNumbers ? null : (
+                  <div className="mi-contact-infoblock">
+                    <span className="mi-contact-infoblock-icon">
+                      <Telegram name="telegram" fill="#a4acc4"/>
+                    </span>
+                    <div className="mi-contact-infoblock-content">
+                      <h6>Telegram</h6>
+                      <p><a href="https://t.me/dat30">Contact Me</a></p>
                     </div>
                   </div>
                 )}
