@@ -3,7 +3,7 @@ import Mock from "../mock";
 const database = {
   information: {
     name: 'Carlos Gustavo Tadeo Armenta Andrade',
-    aboutContent: "DevOps with more than 18 years of server admin experience, more than 12 years of professional Nodejs,ExpressJs,MongoDB development, along with vast experience coordinating development teams and deployment. Profuse knowledge on Python/Bash/JavaScript Hard Worker, commited, auto disciplined and goal oriented.",
+    aboutContent: "FullStackDev + DevSecOps/DevOps with more than 15 years of server admin experience,  more than 10 years of professional Node.js full-stack development, along with vast experience coordinating development teams and deployment. Profuse knowledge on Python/Bash/JavaScript. Hard Worker, committed, auto disciplined, and goal-oriented.",
     age: 40,
     phone: '+34 (920) 02-7744',
     nationality: 'Spanish / Mexican',
@@ -27,18 +27,23 @@ const database = {
     brandImage: '/images/profile_2021.jpg',
     aboutImage: '/images/about_2021.jpg',
     aboutImageLg: '/images/about_2021.jpg',
-    cvfile: '/files/Resume(1.17.2020).pdf'
+    cvfile: '/files/Resume.pdf'
   },
   services: [
     {
-      title: "Web Design",
-      icon: 'color-pallet',
-      details: "Worked with organizing and structuring frontend enviornments in both educational and professional settings."
+      title: "Android/AndroidTv Dev",
+      icon: 'android',
+      details: "Development of native android apps, writen in Kotlin, with the leading technologies that the platform provides."
     },
     {
-      title: "Web Development",
-      icon: 'code',
-      details: "Developed several web applications during the course of the UC Berkeley certification progra, utilizing both front and back end technologies."
+      title: "FullStack Node.js Dev",
+      icon: 'nodejs-alt',
+      details: "MERN/MEVN Stack development, backend/frontend addition, fix or maintenance, with clear code, and stability in mind."
+    },
+    {
+      title: "AWS DevOps",
+      icon: 'aws',
+      details: "Planning, configuring, deployment, and maintenance of AWS infrastructure, with security and scalability"
     },
     {
       title: "Cooperative Experience",
@@ -74,153 +79,160 @@ const database = {
   ],
   skills: [
     {
-      title: "HTML5",
-      value: 70
-    },
-    {
-      title: "CSS3",
-      value: 65
-    },
-    {
       title: "Javascript",
-      value: 55
+      value: 95
     },
     {
-      title: "jQuery",
-      value: 50
+      title: "Node.js",
+      value: 90
+    },
+    {
+      title: "Express.js",
+      value: 90
+    },
+    {
+      title: "MongoDB",
+      value: 85
+    },
+    {
+      title: "Vue.js",
+      value: 75
     },
     {
       title: "ReactJS",
       value: 50
-    },
-    {
-      title: "Bootstrap",
-      value: 65
     }
   ],
   portfolios: [
     {
       id: 1,
-      title: "Guessing Game",
-      subtitle: "HTML, CSS, Javastript",
-      imageUrl: "/images/portfolio-image-1.jpg",
+      title: "AndroidTv IPTV streaming apps",
+      subtitle: "Android Native apps writed in Kotlin",
+      imageUrl: "/images/xcustom_login.png",
       // largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
-      url: 'https://patrickfinnigan.github.io/guessinggame/'
+      url: 'https://www.upwork.com/freelancers/~0130e45a6e324fd76a?p=1378144225357602816'
     },
-    {
-      id: 2,
-      title: "Gem Mining",
-      subtitle: "HTML, CSS, JavaScript, jQuery",
-      imageUrl: "/images/portfolio-image-2.jpg",
-      // largeImageUrl: ["/images/portfolio-image-2-lg.jpg"],
-      url: 'https://pinterest.com'
-    },
-    {
-      id: 3,
-      title: "Trivia Game",
-      subtitle: "HTML, jQuery, Timers",
-      imageUrl: "/images/portfolio-image-3.jpg",
-      // largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
-      url: 'https://patrickfinnigan.github.io/trivia_game/'
-    },
-    {
-      id: 4,
-      title: "Gif Generator",
-      subtitle: "API, JSON, Ajax",
-      imageUrl: "/images/portfolio-image-4.jpg",
-      // largeImageUrl: [
-      //   "/images/portfolio-image-4-lg.jpg",
-      //   "/images/portfolio-image-4-lg2.jpg"
-      // ],
-      url: 'https://patrickfinnigan.github.io/gifgenerator/'
-    },
-    {
-      id: 5,
-      title: "Firebase Train Scheduler",
-      subtitle: "Firebase, HTML, JavaScript",
-      imageUrl: "/images/portfolio-image-5.jpg",
-      // largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
-      url: 'https://patrickfinnigan.github.io/trainschedule/'
-    },
-    {
-      id: 6,
-      title: "Burger Time",
-      subtitle: "Mongo, Express, Node",
-      imageUrl: "/images/portfolio-image-6.jpg",
-      // largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
-      url: 'https://damp-mountain-93742.herokuapp.com/burgers'
-    },
-    {
-      id: 7,
-      title: "React Shuffle",
-      subtitle: "React",
-      imageUrl: "/images/portfolio-image-7.jpg",
-      // largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
-      url: 'https://react-gameucbextension2018.herokuapp.com/'
-    },
-    {
-      id: 8,
-      title: "NYT Article Scraper",
-      subtitle: "React, Mongoose, Cheerio",
-      imageUrl: "/images/portfolio-image-8.jpg",
-      // largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
-      url: 'https://young-river-49658.herokuapp.com/'
-    },
-    {
-      id: 9,
-      title: "Demoquest",
-      subtitle: "Mongoose, Express, React, Node",
-      imageUrl: "/images/portfolio-image-9.jpg",
-      // largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
-      url: 'https://demoquest.herokuapp.com/'
-    }
+    // {
+    //   id: 2,
+    //   title: "Gem Mining",
+    //   subtitle: "HTML, CSS, JavaScript, jQuery",
+    //   imageUrl: "/images/portfolio-image-2.jpg",
+    //   // largeImageUrl: ["/images/portfolio-image-2-lg.jpg"],
+    //   url: 'https://pinterest.com'
+    // },
+    // {
+    //   id: 3,
+    //   title: "Trivia Game",
+    //   subtitle: "HTML, jQuery, Timers",
+    //   imageUrl: "/images/portfolio-image-3.jpg",
+    //   // largeImageUrl: ["/images/portfolio-image-3-lg.jpg"],
+    //   url: 'https://patrickfinnigan.github.io/trivia_game/'
+    // },
+    // {
+    //   id: 4,
+    //   title: "Gif Generator",
+    //   subtitle: "API, JSON, Ajax",
+    //   imageUrl: "/images/portfolio-image-4.jpg",
+    //   // largeImageUrl: [
+    //   //   "/images/portfolio-image-4-lg.jpg",
+    //   //   "/images/portfolio-image-4-lg2.jpg"
+    //   // ],
+    //   url: 'https://patrickfinnigan.github.io/gifgenerator/'
+    // },
+    // {
+    //   id: 5,
+    //   title: "Firebase Train Scheduler",
+    //   subtitle: "Firebase, HTML, JavaScript",
+    //   imageUrl: "/images/portfolio-image-5.jpg",
+    //   // largeImageUrl: ["/images/portfolio-image-5-lg.jpg"],
+    //   url: 'https://patrickfinnigan.github.io/trainschedule/'
+    // },
+    // {
+    //   id: 6,
+    //   title: "Burger Time",
+    //   subtitle: "Mongo, Express, Node",
+    //   imageUrl: "/images/portfolio-image-6.jpg",
+    //   // largeImageUrl: ["/images/portfolio-image-6-lg.jpg"],
+    //   url: 'https://damp-mountain-93742.herokuapp.com/burgers'
+    // },
+    // {
+    //   id: 7,
+    //   title: "React Shuffle",
+    //   subtitle: "React",
+    //   imageUrl: "/images/portfolio-image-7.jpg",
+    //   // largeImageUrl: ["/images/portfolio-image-7-lg.jpg"],
+    //   url: 'https://react-gameucbextension2018.herokuapp.com/'
+    // },
+    // {
+    //   id: 8,
+    //   title: "NYT Article Scraper",
+    //   subtitle: "React, Mongoose, Cheerio",
+    //   imageUrl: "/images/portfolio-image-8.jpg",
+    //   // largeImageUrl: ["/images/portfolio-image-8-lg.jpg"],
+    //   url: 'https://young-river-49658.herokuapp.com/'
+    // },
+    // {
+    //   id: 9,
+    //   title: "Demoquest",
+    //   subtitle: "Mongoose, Express, React, Node",
+    //   imageUrl: "/images/portfolio-image-9.jpg",
+    //   // largeImageUrl: ["/images/portfolio-image-9-lg.jpg"],
+    //   url: 'https://demoquest.herokuapp.com/'
+    // }
   ],
   experience: {
     workingExperience: [
       {
-        id: 1,
-        year: "2019 - Present",
-        position: "Frontend Web Developer",
-        company: "Socicraft (Currently under NDA)",
-        details: "Developing and designing the front-end layout of the company website, utilizing React tools to edit the website to meet company expectations."
+        id: 0,
+        year: "2020 - present",
+        position: "Full time Freelancer",
+        company: "Upwork.com / Freelancer.com",
+        details: "Node.js Full Stack development, AWS DevSecOps/DevOps, with a large experience leading development teams, and working side by side  with clients"
       },
-      // {
-      //   id: 2,
-      //   year: "2016 - 2018",
-      //   position: "Frontend Web Developer",
-      //   company: "CBA Company",
-      //   details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
-      // },
-      // {
-      //   id: 3,
-      //   year: "2014 - 1016",
-      //   position: "UI/UX Designer",
-      //   company: "Example Company",
-      //   details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
-      // }
+      {
+        id: 1,
+        year: "2015 - 2020",
+        position: "Co-Founder & DevSecOps/DevOps",
+        company: "BigMan Co.",
+        details: "DevSecOps responsabilities, Software Development and IT Solutions for our clients."
+      },
+      {
+        id: 2,
+        year: "2014 - 2016",
+        position: "DevSecOps",
+        company: "Beckertime, LLC.",
+        details: "All the DevSecOps responsibilities, working closely with the dev team and the administration department."
+      },
+      {
+        id: 3,
+        year: "2014 - 2020",
+        position: "Partial time Freelancer",
+        company: "Freelancer.com",
+        details: "Worked on small/medium size tasks, coding/deploying/fixing and auditing a wide range of IT solutions"
+      },
+      {
+        id: 4,
+        year: "2007 - 2015",
+        position: "Developer and SysAdmin",
+        company: "HEXSON Tec",
+        details: "Coding solutions in c#, MikroC for PIC, and PIC Assembler. Also maintaining client's hardware infrastructures"
+      },
+      {
+        id: 5,
+        year: "2003 - 2007",
+        position: "Diverse positions",
+        company: "Instituto Tecnológico de Sonora",
+        details: "Diverse positions on IT projects from the college, all of them under the supervision of Dr. Hugo O. Romero; director of the IT research "
+      },
     ],
     educationExperience: [
       {
         id: 1,
-        year: "Sept 2012 - July 2016",
-        graduation: "Bachelor of Arts in Psychology",
-        university: "Sonoma State University",
-        details: "Studied clinical and social psychology, and developed an understanding of aesthetic design that can be used in web development"
+        year: "2001 - 2006",
+        graduation: "Bachelor Degree in Informatics Engineering",
+        university: "Instituto Tecnologico de Sonora",
+        details: "Studied computing science, with a specialty in security and networks"
       },
-      {
-        id: 2,
-        year: "May 2018 - Nov 2018",
-        graduation: "Certification in Web Development",
-        university: "UC Berkeley Extension Program Coding Bootcamp",
-        details: "Learned the fundamentals of computer science and web design, learning how to develop fullstack MERN applications."
-      },
-      // {
-      //   id: 3,
-      //   year: "2015 - 2016",
-      //   graduation: "Higher Schoold Graduation",
-      //   university: "Abc College",
-      //   details: "Lorem Ipsum"
-      // }
     ]
   },
   blogs: [

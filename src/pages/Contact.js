@@ -3,6 +3,7 @@ import axios from 'axios';
 import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
+import * as emailjs from 'emailjs-com'
 
 function Contact(){
   const [phoneNumbers, setPhoneNumbers] = useState([]);
@@ -35,26 +36,47 @@ function Contact(){
       // setMessage('Please include a message in your submission');
     } else{
       setError(false);
-      alert('You message has been sent!');
-      // setMessage('You message has been sent!');
-      const form = event.target;
-      const data = new FormData(form);
-      const xhr = new XMLHttpRequest();
-      xhr.open(form.method, form.action);
-      xhr.setRequestHeader("Accept", "application/json");
-      xhr.onreadystatechange = () => {
-        if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        if (xhr.status === 200) {
+      let templateParams = {
+        from_name: formdata.email,
+        to_name: 'cgtarmenta@gmail.com',
+        subject: formdata.subject,
+        message_html: formdata.message,
+       }
+       emailjs.init("user_y6yn6rbAFs2iZ4EUApguN");
+       emailjs.send(
+        'service_2shm32s',
+        'template_ky5i4px',
+         templateParams,
+        'user_y6yn6rbAFs2iZ4EUApguN'
+       ).then(result=>{
           form.reset();
           window.location.reload();
           setError(false);
           setMessage('You message has been sent!');
-        } else {
-          setError(true);
-          setMessage("There's been an error!");
-        }
-      };
-      xhr.send(data);
+       }).catch(e=>{
+        setError(true);
+        setMessage("There's been an error! " + e.text);
+       })
+      // alert('You message has been sent!');
+      // setMessage('You message has been sent!');
+      const form = event.target;
+      // const data = new FormData(form);
+      // const xhr = new XMLHttpRequest();
+      // xhr.open(form.method, form.action);
+      // xhr.setRequestHeader("Accept", "application/json");
+      // xhr.onreadystatechange = () => {
+      //   if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      //   if (xhr.status === 200) {
+          // form.reset();
+          // window.location.reload();
+          // setError(false);
+          // setMessage('You message has been sent!');
+      // //   } else {
+      //     setError(true);
+      //     setMessage("There's been an error!");
+      //   }
+      // };
+      // xhr.send(data);
     }
   }
   const handleChange = (event) => {
@@ -104,7 +126,7 @@ function Contact(){
             <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
-                <form action="https://formspree.io/xzbeqbjq" method="POST" className="mi-form mi-contact-form" onSubmit={submitHandler}>
+                <form action="" method="POST" className="mi-form mi-contact-form" onSubmit={submitHandler}>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
                     <input onChange={handleChange} type="text" name="name" id="contact-form-name" value={formdata.name}/>
