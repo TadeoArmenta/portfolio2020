@@ -59,11 +59,13 @@ function Home(){
                 </h1>
                 <p>{information.aboutContent}</p>
                 <Socialicons bordered />
-                <CookieConsent location="bottom" cookieName="myAwesomeCookieName3" expires={999} overlay
+                <CookieConsent location="bottom" cookieName="eu-Cookie" expires={999} overlay
                   style={{
                     background: "#10121b",
                     textShadow: "1px 0px white",
-                  }}>
+                  }}
+                  buttonStyle={{ background:"#04b790", color: "#000000", fontSize: "13px" }}
+                  >
                   This website uses cookies to enhance the user experience.
                 </CookieConsent>
               </div>
