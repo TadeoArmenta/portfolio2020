@@ -190,12 +190,12 @@ const database = {
         year: "2020 - present",
         position: "Full time Freelancer",
         company: "Upwork.com / Freelancer.com",
-        details: "Node.js Full Stack development, AWS DevSecOps/DevOps, with a large experience leading development teams, and working side by side  with clients"
+        details: "Node.js Full Stack development, AWS [Dev/Sec]Ops, with a large experience leading development teams, and working side by side  with clients"
       },
       {
         id: 1,
         year: "2015 - 2020",
-        position: "Co-Founder & DevSecOps/DevOps",
+        position: "Co-Founder & [Dev/Sec]Ops",
         company: "BigMan Co.",
         details: "DevSecOps responsabilities, Software Development and IT Solutions for our clients."
       },

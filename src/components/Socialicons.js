@@ -28,22 +28,22 @@ function Socialicons(props){
       </li>}
       {!socialLinks.telegram ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.telegram}>
-          <LineIcon name="telegram"/>
+          <LineIcon name="telegram-original"/>
         </a>
       </li>}
       {!socialLinks.facebook ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.facebook}>
-          <LineIcon name="facebook"/>
+          <LineIcon name="facebook-original"/>
         </a>
       </li>}
       {!socialLinks.twitter ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.twitter}>
-          <LineIcon name="twitter"/>
+          <LineIcon name="twitter-original"/>
         </a>
       </li>}
       {!socialLinks.pinterest ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.pinterest}>
-          <LineIcon name="pinterest"/>
+          <LineIcon name="pinterest-alt"/>
         </a>
       </li>}
       {!socialLinks.behance ? null : <li>
@@ -53,7 +53,7 @@ function Socialicons(props){
       </li>}
       {!socialLinks.linkedin ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.linkedin}>
-          <LineIcon name="linkedin"/>
+          <LineIcon name="linkedin-original"/>
         </a>
       </li>}
       {!socialLinks.dribbble ? null : <li>
@@ -63,7 +63,7 @@ function Socialicons(props){
       </li>}
       {!socialLinks.github ? null : <li>
         <a rel="noopener noreferrer" target="_blank" href={socialLinks.github}>
-          <LineIcon name="github"/>
+          <LineIcon name="github-original"/>
         </a>
       </li>}
       {!socialLinks.stackoverflow ? null : <li>

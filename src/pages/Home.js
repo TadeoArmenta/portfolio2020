@@ -118,8 +118,7 @@ function Home(){
                 </h1>
                 <h2 align="right"><span>{information.titleContent}.</span></h2>
                 <p>{higlightedWords}</p>
-                <hr></hr>
-                <p style={{textAlign: "right"}}><span >{information.reachme}</span></p>
+                <p><span >{information.reachme}</span></p>
                 <Socialicons bordered />
                 <CookieConsent location="bottom" cookieName="eu-Cookie" expires={999} overlay
                   style={{
