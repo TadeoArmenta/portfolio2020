@@ -3,7 +3,11 @@ import Mock from "../mock";
 const database = {
   information: {
     name: 'Carlos Gustavo Tadeo Armenta Andrade',
-    aboutContent: "FullStackDev + DevSecOps/DevOps with more than 15 years of server admin experience,  more than 10 years of professional Node.js full-stack development, along with vast experience coordinating development teams and deployment. Profuse knowledge on Python/Bash/JavaScript. Hard Worker, committed, auto disciplined, and goal-oriented.",
+    shortName: 'Tadeo Armenta',
+    titleContent:"a FullStackDev + DevOps from Spain",
+    aboutContent: "I have more than 15-year experience on SysAdmin. I work mainly with Node.js and have broad experience leading Development Teams and Software Development. Profuse knowledge in Python, Bash, and Javascript is part of my main skills. I'm a hard worker, committed, auto-disciplined, and goal-oriented guy.",
+    higlightedWords: ['SysAdmin', 'DevOps','Node.js', 'MERN','MEVN'],
+    reachme: 'If you are interested in working together or just want to say hello, you can reach me on...',
     age: 40,
     phone: '+34 (920) 02-7744',
     nationality: 'Spanish / Mexican',

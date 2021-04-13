@@ -5,8 +5,12 @@ import Socialicons from "../components/Socialicons";
 import Layout from "../components/Layout";
 import CookieConsent from "react-cookie-consent";
 
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
+}
 function Home(){
   const [information, setInformation] = useState("");
+  const [abouttext, setAboutText] = useState([]);
   const paramConfig = {
     particles: {
       number: {
@@ -44,8 +48,63 @@ function Home(){
     axios.get('/api/information')
     .then( response => {
       setInformation(response.data);
+      setAboutText(response.data.higlightedWords)
     })
   }, [])
+
+  const element = "span";
+
+  const higlightedWords = abouttext.reduce(
+    (prev, word) => {
+      const newWords = [];
+      const reg = new RegExp(escapeRegExp(word), "gi");
+      let index;
+
+      prev.forEach(e => {
+        // Only match for element which is string, if it is not string,
+        // it's already processed(like span or something)
+        if (typeof e === "string") {
+          const wordLength = word.length;
+          let matched = false;
+
+          do {
+            const { index } = reg.exec(e) || {};
+
+            // Keep matching till no more matches found
+            if (index !== undefined) {
+              newWords.push(e.substr(0, index));
+              newWords.push(
+                React.createElement(
+                  element,
+                  {
+                    key: `position-${newWords.length}-${index}`,
+                    className: "color-theme"
+                  },
+                  e.substr(index, wordLength)
+                )
+              );
+              // You can also directly use span here instead of React.createElement
+              // newWords.push(<span>{e.substr(index, wordLength)}</span>);
+              newWords.push(e.substr(index + wordLength));
+              matched = true;
+            }
+          } while (index);
+
+          // If word is not matched, push original sentence
+          if (!matched) {
+            newWords.push(e);
+          }
+        } else {
+          // Push processed element as it is
+          newWords.push(e);
+        }
+      });
+
+      return newWords;
+    },
+    [information.aboutContent]
+  );
+
   return (
     <Layout>
       <div className="mi-home-area mi-padding-section">
@@ -54,10 +113,13 @@ function Home(){
           <div className="row justify-content-center">
             <div className="col-lg-10 col-12">
               <div className="mi-home-content">
-                <h1>
-                  Hi, I'm <span className="color-theme">{information.name}</span>
+                <h1 align="right">
+                  Hi, I'm <span className="color-theme">{information.shortName},</span>
                 </h1>
-                <p>{information.aboutContent}</p>
+                <h2 align="right"><span>{information.titleContent}.</span></h2>
+                <p>{higlightedWords}</p>
+                <hr></hr>
+                <p style={{textAlign: "right"}}><span >{information.reachme}</span></p>
                 <Socialicons bordered />
                 <CookieConsent location="bottom" cookieName="eu-Cookie" expires={999} overlay
                   style={{
