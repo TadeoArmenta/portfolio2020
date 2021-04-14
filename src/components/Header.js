@@ -29,6 +29,11 @@ function Header(){
                         <img src={information.brandImage} alt="brandimage"/>
                     </Link>
                 </div>
+                <div className="mi-header-logo">
+                    <Link to="/">
+                        <img src={information.logo} alt="logo"/>
+                    </Link>
+                </div>
                 <ul className="mi-header-menu">
                     <li><NavLink exact to="/"><span>Home</span></NavLink></li>
                     <li><NavLink to="/about"><span>About</span></NavLink></li>

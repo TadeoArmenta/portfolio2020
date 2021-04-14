@@ -28,6 +28,7 @@ const database = {
       upwork: 'https://www.upwork.com/freelancers/~0130e45a6e324fd76a?viewMode=1',
       freelancer: 'https://www.freelancer.es/hireme/dat30'
     },
+    logo: '/images/logo.png',
     brandImage: '/images/profile_2021_zoomed.jpg',
     aboutImage: '/images/about_2021.jpg',
     aboutImageLg: '/images/about_2021.jpg',

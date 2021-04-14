@@ -63,6 +63,19 @@
         }
     }
 
+    &-logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        a {
+            padding: 20px;
+            height: auto;
+            width: auto;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
     &-menu {
         width: 100%;
         padding: 15px 5px;
