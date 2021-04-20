@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import Particles from "react-particles-js";
+import Particles, { IParticlesParams } from "react-particles-js";
 import Socialicons from "../components/Socialicons";
 import Layout from "../components/Layout";
 import CookieConsent from "react-cookie-consent";
+import { Iinformation } from "data/interfaces/interfaces";
 
 function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
 }
 function Home(){
-  const [information, setInformation] = useState("");
-  const [abouttext, setAboutText] = useState([]);
-  const paramConfig = {
+  const [information, setInformation] = useState<Iinformation | undefined >(undefined);
+  const [abouttext, setAboutText] = useState<string[]>([]);
+  const paramConfig:IParticlesParams = {
     particles: {
       number: {
         value: 160,
@@ -55,8 +56,8 @@ function Home(){
   const element = "span";
 
   const higlightedWords = abouttext.reduce(
-    (prev, word) => {
-      const newWords = [];
+    (prev: any[], word:string) => {
+      const newWords:any[] = [];
       const reg = new RegExp(escapeRegExp(word), "gi");
       let index;
 
@@ -84,7 +85,7 @@ function Home(){
                 )
               );
               // You can also directly use span here instead of React.createElement
-              // newWords.push(<span>{e.substr(index, wordLength)}</span>);
+              // newWords.push(<span className="color-theme">{e.substr(index, wordLength)}</span>);
               newWords.push(e.substr(index + wordLength));
               matched = true;
             }
@@ -102,7 +103,7 @@ function Home(){
 
       return newWords;
     },
-    [information.aboutContent]
+    [information?.aboutContent]
   );
 
   return (
@@ -113,12 +114,12 @@ function Home(){
           <div className="row justify-content-center">
             <div className="col-lg-10 col-12">
               <div className="mi-home-content">
-                <h1 align="right">
-                  Hi, I'm <span className="color-theme">{information.shortName},</span>
+                <h1>
+                  Hi, I'm <span className="color-theme">{information?.shortName},</span>
                 </h1>
-                <h2 align="right"><span>{information.titleContent}.</span></h2>
+                <h2><span>{information?.titleContent}.</span></h2>
                 <p>{higlightedWords}</p>
-                <p><span >{information.reachme}</span></p>
+                <p><span >{information?.reachme}</span></p>
                 <Socialicons bordered />
                 <CookieConsent location="bottom" cookieName="eu-Cookie" expires={999} overlay
                   style={{

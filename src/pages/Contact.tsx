@@ -142,7 +142,7 @@ function Contact(){
                   </div>
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-message">Enter your Message*</label>
-                    <textarea onChange={handleChange} name="message" id="contact-form-message" cols="30" rows="6" value={formdata.message}></textarea>
+                    <textarea onChange={handleChange} name="message" id="contact-form-message" cols={30} rows={6} value={formdata.message}></textarea>
                   </div>
                   <div className="mi-form-field">
                     {/* {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}

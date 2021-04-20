@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import axios from 'axios';
 import LineIcon from 'react-lineicons';
+import { Iinformation } from '../data/interfaces/interfaces'
 
 function Header(){
-    const [information, setInformation] = useState("");
+    
+    const [information, setInformation] = useState<Iinformation | undefined>(undefined);
     const [navigationToggler, setNavigationToggler] = useState(false);
 
     const handleNavigationToggler = () =>{
@@ -26,12 +28,12 @@ function Header(){
             <div className="mi-header-inner">
                 <div className="mi-header-image">
                     <Link to="/">
-                        <img src={information.brandImage} alt="brandimage"/>
+                        <img src={information?.brandImage} alt="brandimage"/>
                     </Link>
                 </div>
                 <div className="mi-header-logo">
                     <Link to="/">
-                        <img src={information.logo} alt="logo"/>
+                        <img src={information?.logo} alt="logo"/>
                     </Link>
                 </div>
                 <ul className="mi-header-menu">

@@ -7,12 +7,13 @@ import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import Service from '../components/Service';
 import Testimonial from '../components/Testimonial';
+import { Iinformation, Ireview, Iservice} from "data/interfaces/interfaces";
 
 function About(){
-  const [toggler, setToggler] = useState(false);
-  const [information, setInformation] = useState("");
-  const [services, setServices] = useState([]);
-  const [reviews, setReviews] = useState([]);
+  const [toggler, setToggler] = useState<Object>(false);
+  const [information, setInformation] = useState<Iinformation | undefined>(undefined);
+  const [services, setServices] = useState<Iservice[] | undefined>(undefined);
+  const [reviews, setReviews] = useState<Ireview[]>([]);
 
   const sliderSettings = {
     dots: false,
@@ -36,7 +37,7 @@ function About(){
     ]
   };
 
-  const handleToggler = (event) => {
+  const handleToggler = (event:boolean) => {
     setToggler({
       toggler: event
     })
@@ -66,7 +67,7 @@ function About(){
             <div className="col-lg-6">
               <div className="mi-about-image">
                 <img
-                  src={information.aboutImage}
+                  src={information?.aboutImage}
                   alt="about"
                   onClick={() => handleToggler(!toggler)}
                 />
@@ -75,45 +76,45 @@ function About(){
                 </span>
                 <FsLightbox
                   toggler={toggler}
-                  sources={[information.aboutImageLg]}
+                  sources={[information?.aboutImageLg]}
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="mi-about-content">
                 <h3>
-                  I am <span className="color-theme">{information.name}</span>
+                  I am <span className="color-theme">{information?.name}</span>
                 </h3>
                 <p>
-                  {information.aboutContent}
+                  {information?.aboutContent}
                 </p>
                 <ul>
-                  {/* {!information.name ? null : <li>
-                    <b>Full Name</b> {information.name}
+                  {/* {!information?.name ? null : <li>
+                    <b>Full Name</b> {information?.name}
                   </li>} */}
-                  {!information.age ? null : <li>
-                    <b>Age</b> {information.age} Years
+                  {!information?.age ? null : <li>
+                    <b>Age</b> {information?.age} Years
                   </li>}
-                  {!information.phone ? null : <li>
-                    <b>Phone</b> {information.phone}
+                  {!information?.phone ? null : <li>
+                    <b>Phone</b> {information?.phone}
                   </li>}
-                  {!information.nationality ? null : <li>
-                    <b>Nationality</b> {information.nationality}
+                  {!information?.nationality ? null : <li>
+                    <b>Nationality</b> {information?.nationality}
                   </li>}
-                  {!information.language ? null : <li>
-                    <b>Languages</b> {information.language}
+                  {!information?.language ? null : <li>
+                    <b>Languages</b> {information?.language}
                   </li>}
-                  {!information.email ? null : <li>
-                    <b>Email</b> {information.email}
+                  {!information?.email ? null : <li>
+                    <b>Email</b> {information?.email}
                   </li>}
-                  {!information.address ? null : <li>
-                    <b>Address</b> {information.address}
+                  {!information?.address ? null : <li>
+                    <b>Address</b> {information?.address}
                   </li>}
-                  {!information.freelanceStatus ? null : <li>
-                    <b>Freelance</b> {information.freelanceStatus}
+                  {!information?.freelanceStatus ? null : <li>
+                    <b>Freelance</b> {information?.freelanceStatus}
                   </li>}
                 </ul>
-                <a href={information.cvfile} className="mi-button">Download CV</a>
+                <a href={information?.cvfile} className="mi-button">Download CV</a>
               </div>
             </div>
           </div>
@@ -124,7 +125,7 @@ function About(){
           <Sectiontitle title="Services" />
           <div className="mi-service-wrapper">
             <div className="row mt-30-reverse">
-              {services.map(service => (
+              {services?.map(service => (
                 <div className="col-lg-4 col-md-6 col-12 mt-30" key={service.title}>
                   <Service content={service}/>
                 </div>

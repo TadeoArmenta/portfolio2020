@@ -6,11 +6,12 @@ import Smalltitle from '../components/Smalltitle';
 import Layout from "../components/Layout";
 import Progress from "../components/Progress";
 import Resume from "../components/Resume";
+import { IeducationExperience, Iskill, IworkExperience } from "data/interfaces/interfaces";
 
 function Resumes(){
-  const [skills, setSkills] = useState([]);
-  const [workingExperience, setWorkingExperience] = useState([]);
-  const [educationExperience, setEducationExperience] = useState([]);
+  const [skills, setSkills] = useState<Iskill[]>([]);
+  const [workingExperience, setWorkingExperience] = useState<IworkExperience[]>([]);
+  const [educationExperience, setEducationExperience] = useState<IeducationExperience[]>([]);
 
   useEffect(() =>{
     axios.get('/api/skills')
