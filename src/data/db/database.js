@@ -12,7 +12,7 @@ const database = {
     phone: '+34 (920) 02-7744',
     nationality: 'Spanish / Mexican',
     language: 'Spanish / English',
-    email: 'cgtarmenta@gmail.com',
+    email: 'contact@tadeoarmenta.com',
     address: 'Ávila del Rey, reino de España',
     freelanceStatus: 'Available',
     socialLinks: {
@@ -295,7 +295,7 @@ const database = {
   ],
   contactInfo: {
     phoneNumbers: ['+34 (920) 02-7744'],
-    emailAddress: ['cgtarmenta@gmail.com'],
+    emailAddress: ['contact@tadeoarmenta.com'],
     address: "Ávila del rey, reino de España"
   }
 }
