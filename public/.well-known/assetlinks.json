@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.servita.virtualwards",
+    "sha256_cert_fingerprints": ["14:68:1B:9B:CF:B6:C4:77:A3:F4:94:66:3D:51:7B:3C:A5:50:60:CC:39:FB:A1:30:B6:4A:13:D1:9E:B3:0D:F9"] }
+}]
