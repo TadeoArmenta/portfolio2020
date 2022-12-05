@@ -4048,6 +4048,11 @@ elliptic@^6.5.3:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
+emailjs-com@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-2.6.4.tgz#c3bac8f7ee58d536ab34923e73013ad39f299f46"
+  integrity sha512-4G8rxq+1mbL4rGntMa9tqNJ4N9BhuCl8lFJASDHxZVXeC82ivwL6qw+Zu48cAWHpNK2/F3vScaAZk8zoTAfiAA==
+
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -9154,10 +9159,10 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-lineicons@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-lineicons/-/react-lineicons-1.0.0.tgz#4f199af92aa0cc7676b46bad343a585dce92efdc"
-  integrity sha512-OPnf/nojH51JlemS8AXNMd8hRwiWBIWSPA28ORUcGtY8tRiUrKDM+Szi26Sq5AhG5xxrB0xrzfS9wJddWYu58g==
+react-lineicons@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-lineicons/-/react-lineicons-2.2.0.tgz#1f773cffbce72dafd95ddc2956d9f70c6f08de0f"
+  integrity sha512-PYQpfDGlaSFkujh3gYsFGhWETUnZ9mbeNFYTptZZ0yKWQ5I3GsTPGzJHYmbZNHxek0py0GFxE7zoIAg1KKcQ8g==
   dependencies:
     prop-types "^15.7.2"
 
