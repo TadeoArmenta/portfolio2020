@@ -32,7 +32,7 @@ const database = {
     brandImage: '/images/profile_2021_zoomed.jpg',
     aboutImage: '/images/about_2021.jpg',
     aboutImageLg: '/images/about_2021.jpg',
-    cvfile: '/files/Resume.pdf'
+    cvfile: '/files/Resume_102022.pdf'
   },
   services: [
     {
